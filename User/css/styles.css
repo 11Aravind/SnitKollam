@@ -1,0 +1,337 @@
+
+body{
+  font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 2%;
+    line-height: 1.5;
+}
+
+hr{
+    width: 5%;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    margin:auto;
+}
+
+img {max-width: 100%;}
+
+
+/* navigation-bar */
+
+#navigation-bar{
+    background-color:  #cf2e2e ;
+}
+.navbar-logo{
+  border-radius: 15px;
+  width: 10%;
+}
+
+.navbar-brand{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+/* .navbar-b-name{
+  color: white;
+} */
+/* .navbar-lists{
+  color: white;
+} */
+
+
+/* carousel */
+
+#carousel{
+   padding: 1%  1%;
+   max-width: 100%;
+}
+.carousel-heading{
+  font-weight: bold;
+  padding: 2%;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+.carousel-btn{
+     background-color: #cf2e2e;
+     border-radius: 100%;
+}
+.carousel-img{
+     padding: 0.5%;
+     width: 99%;
+     border-radius:15px;
+     /* border: 5px solid #cf2e2e; */
+}
+
+/* info */
+
+#info{
+    padding:7% ;
+}
+/* .info-box{
+    padding: 5%;
+} */
+.info-heading{
+  /* font-family: 'JetBrains Mono', monospace; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+.info-para{
+    margin: auto;
+    line-height: 2;
+}
+
+/* mission */
+
+#mission{
+  text-align: left;
+  padding:7%;
+}
+.snitcover-img{
+    border-radius: 5px;
+}
+.mission-title{
+  /* font-family: 'JetBrains Mono', monospace; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+.mission-para{
+  line-height: 1.5;
+}
+.mission-btn{
+    margin-top: 10px;
+}
+
+/* principal */
+
+#principal{
+    padding:7% ;
+}
+.principal-title{
+  position: relative;
+  bottom: 35px;
+  /* padding: 5%; */
+  /* font-family: 'JetBrains Mono', monospace; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  
+}
+.principal-img{
+    width: 480px;
+    height: 400px;
+    border-radius:20px;
+    /* padding: 3%; */
+    /* position: relative;
+    right: 35px; */
+}
+.principal-para-1{
+    text-align: left;
+    /* position: relative;
+    right:30px; */
+    line-height: 2;
+}
+.principal-para-2{
+    text-align: left;
+    /* position: relative;
+    right:30px; */
+    font-weight: bold;
+  } 
+/* .principal-box{
+    padding:4%;
+} */
+
+/* login */
+
+/* #log-in{
+    padding: 7% 15%;
+} */
+
+/* features */
+
+/* #features{
+    padding: 10%;
+}
+.cards{
+    padding: 20px;
+} */
+
+/* contact */
+
+/* #contact{
+    padding: 5%;
+    /* background-color: #82AAE3; */
+
+
+/* faculty.html */
+
+/* footer */
+.footer{
+  background-color: #cf2e2e;
+  padding: 3%;
+  /* color: white; */
+}
+/* .nav-item{
+  color: white;
+  text-decoration: none;
+} */
+
+
+
+.faculty-heading{
+  padding: 5%;
+  font-weight: bold;
+}
+.faculty-img{
+  width: 60%;
+  height: 70%;
+  border-radius: 5%;
+  border: grey 5px solid;
+}
+.faculty-name{
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 3%;
+}
+.faculty-box{
+  padding: 2%;
+}
+
+/* register */
+
+/* .form-signin{
+  padding: 35%;
+} */
+
+/* mediaQuery */
+
+@media (max-width:1028px){
+
+  #info{
+    padding: 7% 5%;
+  }
+  #mission{
+    padding: 7% 5%;
+  }
+  #principal{
+    padding: 7% 5% 2% 5%;
+  }
+  /* .nav-item{
+    text-align: left;
+  } */
+  .navbar-logo{
+    border-radius: 8px;
+    width: 15%;
+  }
+   /* info */
+
+   hr{
+    width: 10%;
+    padding: 10%;
+   }
+
+    h3{
+        font-size: 1.5rem;
+        text-align: left;
+    }
+     .info-para{
+        font-size: 1rem;
+        text-align: left;
+        /* position: relative;
+        right: 33px; */
+    }
+    .carousel-heading{
+      font-size: 1rem;
+    }
+
+    /* mission */
+
+      .snitcover-img{
+         width:100%;
+          /* padding-bottom: 15%; */
+      }
+      .mission-title{
+        font-size:1.5rem ;
+      }
+      .mission-para{
+        font-size:1rem ;
+        line-height: 2;
+      }
+      .mission-btn{
+        margin-bottom: 50px;
+      }
+
+      /* principal */
+
+      .principal-title{
+        font-size: 1.5rem;
+        /* padding: 3%; */
+        text-align: left;
+        position: relative;
+        bottom:0;
+        margin-top: 10px;
+        
+      }
+      .principal-img{
+        text-align:left;
+        padding: 0;
+        width: 90%;
+        height: 80%;
+        margin-right: 0px;
+        margin: 0;
+        position: relative;
+        right: 22px;
+        bottom:0;
+      }
+      .principal-para-1{
+        text-align: left;
+        font-size: 1rem;
+        padding-top: 0;
+        position: relative;
+    bottom: 50px;
+      }
+      .principal-para-2{
+        text-align: left;
+        font-size: 1rem;
+        font-weight: bold;
+        position: relative;
+        bottom: 50px;
+
+      } 
+      /* .principal-box{
+        padding: 4%;
+      } */
+      #log-in{
+        padding: 10% 5% ;
+      }
+      .log-in-title{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 3%;
+      }
+
+      #contact{
+        text-align: center;
+      }
+      .contact-info{
+        text-align: center;
+        font-size: 1.5rem;
+      } 
+
+      /* faculty.html */
+
+      .faculty-name{
+        font-size: 1rem;
+        text-align: center;
+      }
+      .carousel-img{
+      /* border-radius: 30px; */
+      width: 95%;
+   }
+    }
