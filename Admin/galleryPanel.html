@@ -41,7 +41,7 @@
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fa fa-bars"></i>
-
+                
                         <!-- <span>Toggle Sidebar</span> -->
                     </button>
                     <div class="humanReadMsg" style="
@@ -58,56 +58,43 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     </div>
-                    <!-- <a href="./galleryPanel.html">
-                         <button type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target="#exampleModalCenter">
-                            Gallery
-                        </button></a> -->
                 </div>
             </nav>
 
             <div class="rightContent">
                 <div class="card" style="padding: 2%;">
-                    <h4>Register Events</h4>
+                    <h4>Life style gallery</h4>
                     <form name="my_form" id="my_form" accept-charset="multipart/form-data">
                         <div class="form-row">
-                            <div class="form-group col-md-3">
-                                <label for="inputEmail4">Headline</label>
-                                <input type="text" class="form-control" name="headline" id="headline">
+                            <div class="form-group col-md-7">
+                                <label for="caption">Caption</label>
+                                <input type="text" class="form-control" name="caption" id="caption">
                             </div>
-                            <div class="form-group col-md-3">
-                                <label for="inputEmail4">Auther Text</label>
-                                <input type="text" class="form-control" name="authertext" id="authertext">
-                            </div>
-                            <div class="form-group col-md-3">
-                                <label for="inputEmail4">Description</label>
-                                <input type="text" class="form-control" name="description" id="description">
-                                <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> -->
-
-                            </div>
-                            <div class="form-group col-md-2">
-                                <label for="inputEmail4">Image</label>
+                           
+                            <div class="form-group col-md-4">
+                                <label for="inputEmail4">Image (512 X 310)</label>
 
                                 <input type="file" name="image" class="form-control-file" id="image">
                             </div>
+
+                           
                             <!-- <div class="form-group col-md-1"> -->
 
-                            <button type="submit" id="saveEvent" class="btn btn-primary mb-2">Save</button>
+                            <button type="submit" id="saveGallery" class="btn btn-primary mb-2">Save</button>
                             <!-- </div> -->
                     </form>
                 </div>
             </div>
             <div class="card" style="padding: 2%; margin-top: 2%;">
-                <h4>Event List</h4>
-                <table id="eventTable" class="display" style="width:100%">
+                <h4>Life style gallery List</h4>
+                <table id="galleryTable" class="display" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Headline</th>
-                            <th>Description</th>
+                            <th>Caption</th>
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody id="eventList">
+                    <tbody id="galleryTableBody">
 
                     </tbody>
             </div>
@@ -130,19 +117,18 @@
 
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
 
-
+    
     <script src="./js/common/generalFunctionsAndDefenitions.js"></script>
     <script src="./js/common/layout.js"></script>
-    <!-- <script src="./js/common/api.js"></script> -->
-    <!-- <script src="./js/scripts/event.js"></script> -->
+    <script src="./js/common/api.js"></script>
     <script type="text/javascript">
         // $('#sidebar').addClass('active');
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
             });
-            populateEvents();
         });
+        getGallery();
     </script>
 </body>
 
