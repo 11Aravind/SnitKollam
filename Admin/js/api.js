@@ -63,10 +63,8 @@ const getCategory=()=>{
 $(document).ready(function () {
     $('#addEventBtn').on('click', function () {
         getCategory();
-
     });
-   
-});
+   });
 
 
 
