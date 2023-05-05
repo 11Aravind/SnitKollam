@@ -10,7 +10,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" />
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style4.css">
-
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.0/bootstrap-table.min.css"> -->
     <link rel="stylesheet" href="./css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -65,57 +64,73 @@
                         </button></a> -->
                 </div>
             </nav>
-
             <div class="rightContent">
                 <div class="card" style="padding: 2%;">
-                    <h4>Register Events</h4>
-                    <form name="my_form" id="my_form" accept-charset="multipart/form-data">
-                        <div class="form-row">
-                            <div class="form-group col-md-3">
-                                <label for="inputEmail4">Headline</label>
-                                <input type="text" class="form-control" name="headline" id="headline">
-                            </div>
-                            <div class="form-group col-md-3">
-                                <label for="inputEmail4">Auther Text</label>
-                                <input type="text" class="form-control" name="authertext" id="authertext">
-                            </div>
-                            <div class="form-group col-md-3">
-                                <label for="inputEmail4">Description</label>
-                                <input type="text" class="form-control" name="description" id="description">
-                                <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> -->
-
-                            </div>
-                            <div class="form-group col-md-2">
-                                <label for="inputEmail4">Image</label>
-
-                                <input type="file" name="image" class="form-control-file" id="image">
-                            </div>
-                            <!-- <div class="form-group col-md-1"> -->
-
-                            <button type="submit" id="saveEvent" class="btn btn-primary mb-2">Save</button>
-                            <!-- </div> -->
+                    <h4>Add Event Category</h4>
+                    <p id="responseMsg">success</p>
+                    <form class="form-inline" id="addCategory">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="inputPasswordw2">Category</label>
+                            <input type="text" class="form-control" id="category" name="category">
+                        </div>
+                        <button type="button" id="addCategoryBtn" class="btn btn-primary mb-2">Add Category</button>
                     </form>
                 </div>
-            </div>
-            <div class="card" style="padding: 2%; margin-top: 2%;">
-                <h4>Event List</h4>
-                <table id="eventTable" class="display" style="width:100%">
-                    <thead>
-                        <tr>
-                            <th>Headline</th>
-                            <th>Description</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody id="eventList">
+                <!-- next secion  -->
+                <!-- mx-sm-3 mb-2 -->
+                <div class="card" style="padding: 2%; margin-top: 2%;">
+                    <div class="col-12">
+                        <h4>Event List</h4> <button id="addEventBtn" style="position: absolute; right: 0;top: 0;" type="button"
+                            class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                            data-whatever="@getbootstrap">Add Event</button>
+                        <table id="eventTable" class="display" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Photos</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="eventList">
 
-                    </tbody>
-            </div>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
+            </div>
         </div>
     </div>
+    <!-- popup add event form start  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Event</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group col-md-12">
+                            <label for="inputState">Category</label>
+                            <select id="categoryOption"  class="form-control"> </select>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Photo</label>
+                                <input type="file" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add Photo</button>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <!-- popup add event form end  -->
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <!-- Popper.JS -->
@@ -129,21 +144,26 @@
     <script src="./js/lib/bootstrap.min.js"></script>
 
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
-
-
+    <script src="./js/common/commonFunctions.js"></script>
     <script src="./js/common/generalFunctionsAndDefenitions.js"></script>
     <script src="./js/common/layout.js"></script>
+    <script src="./js/api.js"></script>
     <!-- <script src="./js/common/api.js"></script> -->
     <!-- <script src="./js/scripts/event.js"></script> -->
     <script type="text/javascript">
-        // $('#sidebar').addClass('active');
         $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
+                 $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
+
             });
-            populateEvents();
+           
         });
     </script>
+    <!-- <script>
+        $(document).ready(function () {
+            getCategory();
+        });
+    </script> -->
 </body>
 
 </html>
