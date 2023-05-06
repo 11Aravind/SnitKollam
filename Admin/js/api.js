@@ -17,6 +17,7 @@ var apiBaseUrl = "http://localhost/SnitKollam/Database/";
         url: apiBaseUrl + url,
         type: "POST",
         data: data,
+      
         success: (response)=> {
             successCallback(response)
         }
@@ -28,6 +29,8 @@ const APIJSON=(url,data,successCallBack)=>{
         datatype:'json',
         type:'POST',
         data:data,
+        processData: false,
+        contentType: false,
        success: (response)=>{
         successCallBack(JSON.parse(response))
        }
@@ -55,16 +58,35 @@ const getCategory=()=>{
         $("#categoryOption").empty();
        $("#categoryOption").append("<option selected>--Select--</option>");
         response.forEach((element,index) => {
-            $("#categoryOption").append("<option>"+element.eventName+"</option>");
-            console.log(element.eventName);
+            $("#categoryOption").append("<option value='{0}'>{1}</option>".format(element.event_id,element.eventName));
+            // console.log(element.eventName);
         });
          });
 }
 $(document).ready(function () {
+    getEventGallery();
     $('#addEventBtn').on('click', function () {
         getCategory();
+        
     });
    });
-
+   $("#addEventPhoto").click(function(){
+    var formData = new FormData($("#addEvent")[0]);
+    // console.log(formData);
+    $("#popupCloseBtn").click();
+    APIJSON('Admindb/addEvent.php',formData,(response)=>{    
+    $("#callbackMsg").addClass(response.class);
+    $("#callbackMsg").html(response.result);
+    setTimeout(() => {
+        $("#callbackMsg").removeClass(response.class);
+        $("#callbackMsg").html("");      
+    }, 4000);
+})
+   });
+const getEventGallery=()=>{
+    APIJSON('Admindb/getEventGallery.php',true,(response)=>{
+        console.log(response);
+    })
+}
 
 

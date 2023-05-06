@@ -17,7 +17,16 @@ p {
     line-height: 1.7em;
     color: #999;
 }
-
+.red{
+    color: red;
+    padding: 7px 0px;
+    font-weight: 600;
+}
+.green{
+    color: green;
+    padding: 7px 0px;
+    font-weight: 600;
+}
 a,
 a:hover,
 a:focus {
