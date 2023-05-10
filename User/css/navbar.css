@@ -84,3 +84,11 @@ border-radius: 0px;
 .card-img-top{
     height: 290px;
 }
+.dropdown-item{
+    color: white !important;
+}
+.dropdown-item:hover {
+    color: white !important;
+    background-color: #dd3a3a !important;
+    /* margin-left: 7px; */
+}
