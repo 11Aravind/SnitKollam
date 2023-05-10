@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,31 +11,47 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <!-- css -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/gallery.css">
-  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/card.scss">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/faculty.css">
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <!-- <script src="https://appuals.com/wp-content/litespeed/localres/aHR0cHM6Ly9jb2RlLmpxdWVyeS5jb20vjquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
   <!-- navbar start-->
   <div class="container">
     <div class="logo">
-      <a href="index.html"><img src="images/snit2.jpeg" alt="logo" /></a>
+      <img src="images/snit2.jpeg" alt="logo" />
+      <!-- <div class="logoMainCOntainer">
+        <div class="logo-name-container">
+          <div class="college-name">SNiT</div>
+          <div class="college-place">Kollam
+
+          </div>
+        </div>
+        <div> <small>Managed by SNES,Kollam</small></div>
+
+        <small>
+          Approved By AICTE,Affiliated to University of Kerala Recognized by Government of Kerala
+        </small>
+
+      </div> -->
+
     </div>
     <div class="menu-container">
       <div class="submenu">Student Login</div>|
-      <div class="submenu"><a href="../Admin/Login.html">Faculty Login</a></div>|
+      <div class="submenu"><a href="../Admin/Login.html">Faculty Login</a></div> |
       <div class="submenu">Contact Us</div>
     </div>
   </div>
   <div class="main-nav">
-    <div class="menu"><a href="../index.html">Home</a></div>
+    <div class="menu">Home</div>
 
     <div class="dropdown ">
       <div class="menu dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
@@ -98,89 +115,100 @@
       <div class="menu dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" id="galleryDropdown">
         Gallery
       </div>
-      <div class="dropdown-menu dropdownMenu" id="categoryOptionSelection"></div>
+      <div class="dropdown-menu dropdownMenu" id="categoryOptionSelection">
+        <!-- <a class="dropdown-item" href="Gallery.html">All</a>
+        <a class="dropdown-item" href="#">Freshers Day</a>
+        <a class="dropdown-item" href="#">Arts Day</a>
+        <a class="dropdown-item" href="#">PTA</a>
+        <a class="dropdown-item" href="#">Academics Calender</a> -->
+      </div>
     </div>
 
     <div class="menu">Feedback</div>
   </div>
   <!-- navbar end -->
-  <section id="mission">
-    <div class="row">
-      <!-- headding start -->
-      <div class="headding">
-        <h2 class="text-left"> All Category</h2>
-      </div>
-      <!-- headding end -->
+  <div id="info">
+    <!-- <input type="text" id="desableInput" value=""/> -->
 
-      <div class="row row-cols-1 row-cols-md-4">
-        <div class="col mb-4">
-          <div class="card">
-            <img src="https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg?w=2000"
-              class="card-img-top" alt="...">
-            <!-- <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-       </div> -->
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg?w=2000"
-              class="card-img-top" alt="...">
-            <!-- <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-       </div> -->
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg?w=2000"
-              class="card-img-top" alt="...">
-            <!-- <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-       </div> -->
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg?w=2000"
-              class="card-img-top" alt="...">
-            <!-- <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-       </div> -->
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg?w=2000"
-              class="card-img-top" alt="...">
-            <!-- <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-       </div> -->
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg?w=2000"
-              class="card-img-top" alt="...">
-            <!-- <div class="card-body">
-         <h5 class="card-title">Card title</h5>
-         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-       </div> -->
-          </div>
+    <div class="text-md-start" id="categoryHeadding"></div>
+  <div id="gallery" class="container-fluid">
+        <!-- <video class="vid" controls>
+    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+    </source>
+  </video> -->
+    <!-- <img src="https://source.unsplash.com/1600x1200?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/1024x768?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/1366x768?female,portrait" class="img-responsive">
+
+    <img src="https://source.unsplash.com/1920x1080?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/640x360?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/320x640?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/1200x1600?female,portrait" class="card img-responsive">
+    <img src="https://source.unsplash.com/800x600?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/600x800?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/400x600?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/600x400?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/1100x1600?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/1600x1100?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/992x768?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/768x992?female,portrait" class="img-responsive"> -->
+
+  </div>
+</div>
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
         </div>
       </div>
-  </section>
+
+    </div>
   </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="./js/lib/jquery.min.js"></script>
+  <script src="./js/lib/bootstrap.min.js"></script>
+  <script src="./js/lib/fontAwsome.js "></script>
+  <script>
+    $(document).ready(function () {
+      $("img").click(function () {
+        var t = $(this).attr("src");
+        $(".modal-body").html("<img src='" + t + "' class='modal-img'>");
+        $("#myModal").modal();
+      });
+
+      $("video").click(function () {
+        var v = $("video > source");
+        var t = v.attr("src");
+        $(".modal-body").html("<video class='model-vid' controls><source src='" + t + "' type='video/mp4'></source></video>");
+        $("#myModal").modal();
+      });
+    });//EOF Document.ready
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+  crossorigin="anonymous"></script>
+<script src="./js/lib/jquery.min.js"></script>
+<!-- <script src="./js/bootstrap-tagsinput.js"></script> -->
+<script type="text/javascript" src="./js/lib/datatables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="./js/lib/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+  integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+  crossorigin="anonymous"></script>
+
 <script src="./js/api.js"></script>
+<script >loadGallery()</script>
+</body>
 
 </html>

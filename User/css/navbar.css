@@ -81,3 +81,6 @@ width: 75%;
 color: black;
 border-radius: 0px;
 }
+.card-img-top{
+    height: 290px;
+}

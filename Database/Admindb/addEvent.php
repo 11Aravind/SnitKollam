@@ -12,6 +12,9 @@ $destination_path="../uploadImage/".$temp_name;
 if(move_uploaded_file($_FILES['eventImage']['tmp_name'],$destination_path))
 {
     // echo "file Uploaded";
+    $destination_path="uploadImage/".$temp_name;
+    // $store_path="uploadImage/".$temp_name";
+    
     $query="INSERT INTO eventGallery values('','$category_id','$destination_path')"; 
     $result= (mysqli_query($connect,$query))?(["result"=>"Successfult Inserted","class"=>"green"]):(["result"=>"Data Insertion Failed","class"=>"red"]);
     // echo $result;

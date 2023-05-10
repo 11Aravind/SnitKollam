@@ -46,7 +46,9 @@ img {max-width: 100%;}
   color: white;
 } */
 
-
+.card-img-top{
+  height: 290px;
+}
 /* carousel */
 
 #carousel{
@@ -73,7 +75,7 @@ img {max-width: 100%;}
 /* info */
 
 #info{
-    padding:7% ;
+  margin: 27px 92px;
 }
 /* .info-box{
     padding: 5%;
@@ -126,7 +128,7 @@ img {max-width: 100%;}
 .principal-img{
     width: 480px;
     height: 400px;
-    border-radius:20px;
+    /* border-radius:20px; */
     /* padding: 3%; */
     /* position: relative;
     right: 35px; */
