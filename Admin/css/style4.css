@@ -74,7 +74,8 @@ span {
 #sidebar {
     min-width: 176px;
     max-width: 250px;
-    background: #000000;
+    /* background: #000000; */
+    background: #dd3a3a;
     color: #fff;
     transition: all 0.3s;
 }
@@ -130,7 +131,7 @@ span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #000000;
+    background: #dd3a3a;
 }
 
 #sidebar .sidebar-header strong {
@@ -140,7 +141,7 @@ span {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    /* border-bottom: 1px solid #47748b; */
 }
 
 #sidebar ul li a {
@@ -164,7 +165,10 @@ a[aria-expanded="true"] {
     background: #000000;
 }
 .btn-info{
-    background-color: #000000 !important;
+    border-color: #dd3a3a !important;
+    background: #dd3a3a !important;
+    
+
 }
 a[data-toggle="collapse"] {
     position: relative;

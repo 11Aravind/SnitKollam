@@ -40,7 +40,7 @@ const loadGallery=()=>{
     cid=param.get('id');
                 // $("#desableInput").val(e.target.id);
             API_JSON('Userdb/getOnecategory.php',{'id':cid},(response)=>{
-                console.log(response.categoryName.eventName);
+                console.log(response.categoryName);
                 $("#categoryHeadding").html("<h3 class='text-md-start'>"+response.categoryName.eventName+"</h3>");
                 $("#gallery").empty();
                 response.result.forEach((element,index)=>{

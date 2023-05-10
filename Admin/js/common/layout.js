@@ -17,8 +17,15 @@ var sideBar = "<div class='sidebar-header'></div><ul class='list-unstyled compon
 $("#sidebar").append(sideBar);
 
 
-var topMenu = "<ul class='nav navbar-nav ml-auto' style='font-size: x-large;font-family: fantasy;' id='headlineTop'></ul>";
-
+var topMenu = "<ul class='nav navbar-nav ml-auto'  id='headlineTop'><div class='btn-group dropleft'><a class='dropdown-toggle' href='#' role='button' data-toggle='dropdown' aria-expanded='false'> <i class='fa fa-user' aria-hidden='true'></i></a><div class='dropdown-menu'><a class='dropdown-item' href='#'>Action</a><a class='dropdown-item' href='#'>Another action</a><a class='dropdown-item' href='#'>Something else here</a></div></div>   </ul>";
+{/* <div class="">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> */}
+//     Dropleft
+//   </button>
+//   <div class="dropdown-menu">
+//     <!-- Dropdown menu links -->
+//   </div>
+// </div>
 $("#navbarSupportedContent").append(topMenu);
 
 
