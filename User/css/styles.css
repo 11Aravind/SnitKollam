@@ -115,6 +115,7 @@ img {max-width: 100%;}
 
 #principal{
     padding:7% ;
+    padding-bottom: 0px;
 }
 .principal-title{
   position: relative;
@@ -214,7 +215,6 @@ img {max-width: 100%;}
 /* mediaQuery */
 
 @media (max-width:1028px){
-
   #info{
     padding: 7% 5%;
   }
@@ -337,3 +337,9 @@ img {max-width: 100%;}
       width: 95%;
    }
     }
+    @media only screen and (max-width: 536px)
+{
+  #info{
+    margin:0;
+  }
+}

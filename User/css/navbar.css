@@ -107,3 +107,35 @@ border-radius: 0px;
     background-color: #dd3a3a !important;
     /* margin-left: 7px; */
 }
+.announce-headding{
+    width:85%
+}
+.announce-margue{
+    width:15%
+}
+.announce-container{
+    margin-top: 10px;
+}
+@media only screen and (max-width: 1020px)
+{
+.main-nav{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    background: red;
+    display: none;
+}
+}
+@media only screen and (max-width: 426px)
+{
+    .menu-container{
+        font-size: 6px;
+    }
+    .announce-margue {
+        width: 41%;
+        font-size: 13px;
+    }
+    .announce-headding{
+        width:59% ;
+    }
+}
