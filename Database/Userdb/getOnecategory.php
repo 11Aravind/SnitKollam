@@ -28,7 +28,7 @@ $row=mysqli_fetch_assoc($exe);
 }
 else
 {
-    $row= array("eventName"=> 'All Category');
+    $row= array("eventName"=> 'All Events');
     // echo json_encode(["result"=>$result,"categoryName"=>$row]);
 }
 echo json_encode(["result"=>$result,"categoryName"=>$row]);

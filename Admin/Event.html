@@ -6,20 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Admin</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" />
+    <title>Snit Admin</title>
+    <link rel="icon" type="image/x-icon" href="../User/images/snit.ico">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" /> -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style4.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.0/bootstrap-table.min.css"> -->
     <link rel="stylesheet" href="./css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font Awesome JS -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-        crossorigin="anonymous"></script> -->
+
     <link rel="stylesheet" type="text/css" href="./css/datatables.min.css" />
     <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
 
@@ -65,37 +61,64 @@
                 </div>
             </nav>
             <div class="rightContent">
-                <div class="card" style="padding: 2%;">
-                    <h4>Add Event Category</h4>
+                <div class="card " style="padding: 2%;">
+                    <h4>Event Category</h4>
+                    <button id="showCategory" style="position: absolute; right: 34px;top: 18px;"type="button" class="btn btn-warning" >Show List</button>
                     <p id="responseMsg"></p>
-                    <form class="form-inline" id="addCategory">
-                        <div class="form-group mx-sm-3 mb-2">
-                            <label for="inputPasswordw2">Category</label>
-                            <input type="text" class="form-control" id="category" name="category" required>
-                        </div>
-                        <button type="button" id="addCategoryBtn" class="btn btn-primary mb-2">Add Category</button>
-                    </form>
-                </div>
+                    <!-- <div class="col-12">
+                        <div class="row"> -->
+                            <form class="form-inline " id="addCategory">
+                                <div class="row" style="justify-content: center;align-items: center;">
+                                    <div class="form-group mx-sm-3 mb-2">
+                                        <label for="inputPasswordw2">Category</label>
+                                        <input type="text" class="form-control" id="category" name="category" required>
+                                    </div>
+                                    <!-- <div class="col-4"> -->
+                                        <button type="button" id="addCategoryBtn" class="btn btn-primary mb-2">Add Category</button>
+
+                                    <!-- </div> -->
+                                </div>
+                            </form>
+                     
+                            <!-- <div class="col-6"> -->
+                                <table id="categoryTable" class=" table" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Category Name</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="eventCategory">
+
+                                    </tbody>
+                                </table>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    </div>
+                <!-- </div> -->
                 <!-- next secion  -->
                 <!-- mx-sm-3 mb-2 -->
                 <div class="card" style="padding: 2%; margin-top: 2%;">
                     <div class="col-12">
-                        <h4>Event List</h4> <button id="addEventBtn" style="position: absolute; right: 0;top: 0;"
+                        <h4>Event List</h4> 
+                        <button id="addEventBtn" style="position: absolute; right: 0;top: 0;"
                             type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
                             data-whatever="@getbootstrap">Add Event</button>
-                            <div id="callbackMsg" ></div>
-                        <table id="eventTable" class="display" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Category</th>
-                                    <th>Photos</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody id="eventList">
-
-                            </tbody>
-                        </table>
+                        <div id="callbackMsg"></div> 
+                        <div class="container">
+                            <br><br><br>
+                            <table id="eventTable" class="display" style="width:90%">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Photos</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="eventList"></tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
@@ -116,16 +139,18 @@
                     <form enctype="multipart/form-data" id="addEvent">
                         <div class="form-group col-md-12">
                             <label for="inputState">Category</label>
-                            <select id="categoryOption"name='eventCategory' class="form-control" required> </select>
+                            <select id="categoryOption" name='eventCategory' class="form-control" required> </select>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Photo</label>
-                                <input type="file" id="eventImage" class="form-control" name='eventImage' id="exampleInputPassword1" required>
+                                <input type="file" id="eventImage" class="form-control" name='eventImage'
+                                    id="exampleInputPassword1" required>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" id="popupCloseBtn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" id="popupCloseBtn" class="btn btn-secondary"
+                        data-dismiss="modal">Close</button>
                     <button type="button" id="addEventPhoto" class="btn btn-primary">Add Photo</button>
                 </div>
             </div>
@@ -160,11 +185,12 @@
 
         });
     </script>
-    <!-- <script>
+    <script>
         $(document).ready(function () {
+            
             getCategory();
         });
-    </script> -->
+    </script>
 </body>
 
 </html>

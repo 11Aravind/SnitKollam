@@ -3,8 +3,9 @@ require('../connect.php');
 $category_id=$_POST['eventCategory'];
 $fname=$_FILES['eventImage']['name'];
 $fname_extension=pathinfo($fname,PATHINFO_EXTENSION);
-$valid_extension=array('jpg','jpeg','png','webp');
+$valid_extension=array('jpeg','png','webp','jpg');
 $result=[];
+$fname_extension=strtolower($fname_extension);
 if(in_array($fname_extension,$valid_extension))
 {
 $temp_name=rand().".".$fname_extension;

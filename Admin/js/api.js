@@ -41,30 +41,39 @@ $("#checkAuthentication").click(function (e) {
     API('Admindb/login.php', $("#admin-authentication").serialize(), (result) => {
         if (result == "success")
             window.location = "./index.html"
-        else
-            console.log(result)
+        // else
+        //     console.log(result)
     })
 });
 $("#addCategoryBtn").click(function(e){
 e.preventDefault();
-API('Admindb/Addcategory.php',$("#addCategory").serialize(),(response)=>{
-    $("#category").val("");
-    humenReadmsg(response)
-})
+if($("#category").val()=='')
+{
+alert("Enter Category Name");
+}
+else{
+    API('Admindb/Addcategory.php',$("#addCategory").serialize(),(response)=>{
+        $("#category").val("");
+        alert(JSON.parse(response))
+    })
+}
 });
 const getCategory=()=>{
     APIJSON('Admindb/getCategory.php',true,(response)=>{
         // console.log(response[0])
         $("#categoryOption").empty();
        $("#categoryOption").append("<option selected>--Select--</option>");
+       $("#eventCategory").empty();
         response.forEach((element,index) => {
             $("#categoryOption").append("<option value='{0}'>{1}</option>".format(element.event_id,element.eventName));
             // console.log(element.eventName);
+          
+            $("#eventCategory").append("<tr><th scope='row'>{0}</th><td>{1}</td><td><button class='btn btn-primary'>edit</button></td></tr>".format(element.event_id,element.eventName))
         });
          });
 }
 $(document).ready(function () {
-    getEventGallery();
+    // getEventGallery();
     $('#addEventBtn').on('click', function () {
         getCategory();
         

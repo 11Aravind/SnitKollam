@@ -10,6 +10,9 @@ body {
 .rightContent{
     padding: 0% 4% 2% 4%;
 }
+#eventTable{
+    margin-top: 20px;
+    }
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
