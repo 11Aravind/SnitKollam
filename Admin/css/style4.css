@@ -13,6 +13,12 @@ body {
 #eventTable{
     margin-top: 20px;
     }
+.td-img{
+    /* width: 150px;
+    height: 150px; */
+    width: 100px;
+    height: 100px;
+}
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
