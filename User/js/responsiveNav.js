@@ -14,7 +14,7 @@ var responsivwNav='<div class="btn" style="border:none">\
       <li><a href="#">About Snit</a></li>\
       <li><a href="#">Faculty</a></li>\
       <li><a href="#">Vission & Mission</a></li>\
-      <li><a class="dropdown-item" href="./images/pdf/mandatory_disclosure_ANNEXURE_2022.pdf">Mandatory disclosure</a></li>\
+      <li><a  href="./images/pdf/mandatory_disclosure_ANNEXURE_2022.pdf">Mandatory disclosure</a></li>\
     </ul>\
   </li>\
   <li>\
@@ -29,48 +29,49 @@ var responsivwNav='<div class="btn" style="border:none">\
     </ul>\
   </li>\
   <li>\
-    <a href="#" class="serv-btn">Admission\
-      <span class="fa fa-chevron-down second"></span>\
+    <a href="#" class="serv-btn1">Admission\
+      <span class="fa fa-chevron-down three"></span>\
     </a>\
-    <ul class="serv-show">\
+    <ul class="serv-show1">\
       <li><a href="#">Admission Procedure</a></li>\
-      <li> <a class="dropdown-item" href="./images/pdf/prospectus.pdf">Prospectus</a></li>\
+      <li> <a  href="./images/pdf/prospectus.pdf">Prospectus</a></li>\
       <li><a href="#">Scholarship</a></li>\
     </ul>\
   </li>\
   <li>\
-    <a href="#" class="serv-btn">Amenities\
-      <span class="fa fa-chevron-down second"></span>\
+    <a href="#" class="serv-btn2">Amenities\
+      <span class="fa fa-chevron-down four"></span>\
     </a>\
-    <ul class="serv-show">\
+    <ul class="serv-show2">\
       <li><a href="#">Library</a></li>\
-      <li> <a class="dropdown-item" href="#">Computer Lab</a></li>\
+      <li> <a  href="#">Computer Lab</a></li>\
     </ul>\
   </li>\
   <li>\
-    <a href="#" class="serv-btn">Student Life\
-      <span class="fa fa-chevron-down second"></span>\
+    <a href="#" class="serv-btn3">Student Life\
+      <span class="fa fa-chevron-down five"></span>\
     </a>\
-    <ul class="serv-show">\
+    <ul class="serv-show3">\
       <li><a href="#">Student Union</a></li>\
-      <li> <a class="dropdown-item" href="#">Club</a></li>\
-      <li> <a class="dropdown-item" href="#">College Magazine</a></li>\
-      <li> <a class="dropdown-item" href="#">Placement</a></li>\
+      <li> <a  href="#">Club</a></li>\
+      <li> <a  href="#">College Magazine</a></li>\
+      <li> <a  href="#">Placement</a></li>\
     </ul>\
   </li>\
   <li><a href="#">Announcement</a></li>\
   \
   <li>\
-    <a href="#" class="serv-btn" id="">Gallery\
-      <span class="fa fa-chevron-down second"></span>\
+    <a href="#" class="serv-btn4" id="">Gallery\
+      <span class="fa fa-chevron-down six"></span>\
     </a>\
-    <ul class="serv-show" id="">\
+    <ul class="serv-show4" id="rescategoryOptionSelection">\
     </ul>\
   </li>\
   <li><a href="#">Feedback</a></li>\
 </ul>\
 </nav>';
 $("#responsiveMenu").append(responsivwNav);
+
 $('.btn').click(function(){
     $(this).toggleClass("click");
     $('.sidebar').toggleClass("show");
@@ -86,3 +87,21 @@ $('.btn').click(function(){
   $('nav ul li').click(function(){
     $(this).addClass("active").siblings().removeClass("active");
   });
+  // my code 
+  $('.serv-btn1').click(function(){
+    $('nav ul .serv-show1').toggleClass("show1");
+    $('nav ul .three').toggleClass("rotate");
+  });
+  $('.serv-btn2').click(function(){
+    $('nav ul .serv-show2').toggleClass("show1");
+    $('nav ul .four').toggleClass("rotate");
+  });
+  $('.serv-btn3').click(function(){
+    $('nav ul .serv-show3').toggleClass("show1");
+    $('nav ul .five').toggleClass("rotate");
+  });
+  $('.serv-btn4').click(function(){
+    $('nav ul .serv-show4').toggleClass("show1");
+    $('nav ul .six').toggleClass("rotate");
+  });
+  // my code end
