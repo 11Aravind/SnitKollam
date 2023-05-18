@@ -106,6 +106,7 @@ img {max-width: 100%;}
 }
 .mission-para{
   line-height: 1.5;
+  text-align: left;
 }
 .mission-btn{
     margin-top: 10px;
@@ -264,6 +265,8 @@ img {max-width: 100%;}
       .mission-para{
         font-size:1rem ;
         line-height: 2;
+        text-align: left;
+ 
       }
       .mission-btn{
         margin-bottom: 50px;

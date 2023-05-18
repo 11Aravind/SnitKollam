@@ -88,7 +88,6 @@ flex-direction: column;
 	-moz-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-  
 	height: 100%;
 	width: 100%;
 	padding: 35px 40px;
@@ -290,7 +289,9 @@ flex-direction: column;
   }
   
   @media only screen and (max-width: 479px) {
-  
+   .card-container{
+padding: 0;
+  }
   }
   
   @media (min-width: 768px) and (max-width: 979px) {

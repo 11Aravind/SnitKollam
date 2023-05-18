@@ -125,8 +125,8 @@ border-radius: 0px;
     flex-direction: column;
     align-items: flex-start;
     /* width: 80%; */
-    background: red;
-    /* display: none; */
+    /* background: red; */
+    display: none;
 }
 }
 @media only screen and (max-width: 426px)
