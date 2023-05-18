@@ -4,7 +4,7 @@ var responsivwNav='<div class="btn" style="border:none">\
 <nav class="sidebar">\
 <div class="text">\
 </div>\
-<ul>\
+<ul style="margin-top: 46px;">\
   <li class="active"><a href="#">Home</a></li>\
   <li>\
     <a href="#" class="feat-btn">Institution \
@@ -61,10 +61,10 @@ var responsivwNav='<div class="btn" style="border:none">\
   <li><a href="#">Announcement</a></li>\
   \
   <li>\
-    <a href="#" class="serv-btn" id="galleryDropdown">Gallery\
+    <a href="#" class="serv-btn" id="">Gallery\
       <span class="fa fa-chevron-down second"></span>\
     </a>\
-    <ul class="serv-show" id="categoryOptionSelection">\
+    <ul class="serv-show" id="">\
     </ul>\
   </li>\
   <li><a href="#">Feedback</a></li>\

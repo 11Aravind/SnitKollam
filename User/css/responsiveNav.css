@@ -47,6 +47,7 @@
     left: 0px;
     z-index: 100;
     top: 0;
+    background: white;
   }
   .sidebar .text{
     color: black;
@@ -89,6 +90,7 @@
   }
   nav ul li a:hover{
     /* background: #1e1e1e; */
+    text-decoration: none;
   }
   nav ul ul{
     position: static;
@@ -117,6 +119,7 @@
   }
   nav ul ul li a:hover{
     color: red!important;
+    text-decoration: none;
     /* background: #1e1e1e!important; */
   }
   nav ul li a span{
@@ -148,3 +151,12 @@
     font-size: 30px;
     font-weight: 500;
   }
+  #responsiveMenu{
+    display: none;
+  }
+  @media only screen and (max-width: 1020px)
+{
+  #responsiveMenu{
+    display: block;
+  }
+}
