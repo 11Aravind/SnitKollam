@@ -1,0 +1,91 @@
+.sliders{
+    height: 421px;
+    width: 100%;
+    /* background-color: #101010; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* font-family: Arial; */
+    color: White;
+    font-size: min(30px, max(3.75vw, 25px));
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 15px;
+}
+
+
+
+
+/* Esconde el contenido hasta que se ejecute el JS */
+slider > content{display:none}
+/* Contenedor general */
+slider{
+    background-color: #9e9e9e;
+    width: 100%;
+    aspect-ratio: 3/2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+/* Contenedor de contenido */
+slider .contents{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  transition: all .5s ease;
+}
+slider content{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: block;
+  background-size: cover;
+  transform: translate(100%, 0);
+}
+slider content:nth-of-type(1){transform: translate(0%, 0);}
+
+/* Flechas */
+slider .ArrowLeft, slider .ArrowRight{
+  position: absolute;
+  height: 100%;
+  width: 2em;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+slider .ArrowLeft{left: 0px;}
+slider .ArrowRight{right: 0px;}
+
+/* Selectores */
+slider .Selectores {
+  padding: 15px;
+  position: absolute;
+  bottom: -1.5em;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+slider .Selectores > div {
+  background-color: #FFF;
+  height: 10px;
+  width: 10px;
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+}
+slider .Selectores > div.Activo {background-color: #999999;}
+@media only screen and (max-width: 426px)
+{
+    .sliders{
+        height: 302px;
+    }
+}

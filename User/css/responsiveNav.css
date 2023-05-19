@@ -119,6 +119,8 @@
     color: black;
     /* background: #1b1b1b; */
     border-left-color: transparent;
+    font-size: 13px;
+    font-weight: 500;
   }
   nav ul ul li a:hover{
     color: red!important;

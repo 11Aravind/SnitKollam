@@ -59,9 +59,8 @@ var responsivwNav='<div class="btn" style="border:none">\
     </ul>\
   </li>\
   <li><a href="#">Announcement</a></li>\
-  \
   <li>\
-    <a href="#" class="serv-btn4" id="">Gallery\
+    <a href="#" class="serv-btn4" >Gallery\
       <span class="fa fa-chevron-down six"></span>\
     </a>\
     <ul class="serv-show4" id="rescategoryOptionSelection">\

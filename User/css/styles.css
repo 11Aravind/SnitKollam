@@ -7,7 +7,7 @@ body{
 }
 
 h3{
-    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 2rem;
     padding-bottom: 2%;
@@ -100,14 +100,17 @@ img {max-width: 100%;}
     border-radius: 5px;
 }
 .mission-title{
-  /* font-family: 'JetBrains Mono', monospace; */
-  /* font-family: 'Montserrat', sans-serif; */
-  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 41px;
 }
-.mission-para{
-  line-height: 1.5;
+.mission-para,p{
+  line-height: 1.75;
   text-align: left;
+  /* font-family: 'Wix Madefor Display', sans-serif; */
+  font-size: 17px;
 }
+
 .mission-btn{
     margin-top: 10px;
 }
@@ -115,8 +118,9 @@ img {max-width: 100%;}
 /* principal */
 
 #principal{
-    padding:7% ;
+    padding:0px 7% ;
     padding-bottom: 0px;
+    padding-top: 5%;
 }
 .principal-title{
   position: relative;

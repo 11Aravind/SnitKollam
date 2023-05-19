@@ -9,10 +9,12 @@
   <link rel="icon" type="image/x-icon" href="./images/snit.ico">
   <!-- bootstrap -->
   <link rel="stylesheet" href="./js/lib/bootstrap.min.js">
+  <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <!-- css -->
-
+  <!-- <script src="./js/lib/bootstrap.bundle.min.js"></script> -->
+<link rel="stylesheet" href="./css/carousel.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/responsiveNav.css">
   <link rel="stylesheet" href="css/navbar.css">
@@ -23,7 +25,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500;700&display=swap" rel="stylesheet">
   <!-- <script src="https://appuals.com/wp-content/litespeed/localres/aHR0cHM6Ly9jb2RlLmpxdWVyeS5jb20vjquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -46,7 +50,7 @@
   <div class="main-nav" id="topnav"></div>
   <!-- navbar end -->
   <!-- carousel -->
-  <section id="carousel">
+  <!-- <section id="carousel">
     <div class="row">
       <div class="col-sm-12">
         <div id="carouselExample" class="carousel slide title-carousel" data-bs-ride="true">
@@ -60,12 +64,7 @@
             <div class="carousel-item">
               <img class="carousel-img" src="images/c-img-1.jpg" alt="snit-banner-img" data-bs-interval="1000">
             </div>
-            <!-- <div class="carousel-item">
-                    <img class="carousel-img" src="images/gallery4.jpeg"  alt="snit-banner-img" data-bs-interval="1000">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="carousel-img" src="images/gallery5.jpeg"  alt="snit-banner-img" data-bs-interval="1000">
-                  </div> -->
+    
           </div>
           <button class="carousel-control-prev  " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon carousel-btn " aria-hidden="true"></span>
@@ -78,25 +77,33 @@
         </div>
       </div>
     </div>
-    <div class="row col-12 announce-container">
-      <div  class="announce-margue">
-        <div class="announcement"> <b class="text-md-start">Annoucements</b></div>
-      </div>
-      <div  class="announce-headding">
-        <marquee behavior="" direction="" style="color:red">MCA 2023 Admission Booking under Management Seats started.
-          More
-          Info Contact - 0474-2723154<a href="#">Click
-            Me</a></marquee>
-      </div>
-    </div>
-  </section>
-
+    
+  </section> -->
+<div class="sliders">
+  <slider arrows="true" selec="true" autoplay="4">
+    <content style="background-image: url(images/c-img-3.jpg);"></content>
+    <content style="background-image: url(images/c-img-2.jpg);"></content>
+    <content style="background-image: url(images/c-img-1.jpg);"></content>
+  </slider>
+  
+</div>
+<div class="row col-12 announce-container">
+  <div  class="announce-margue">
+    <div class="announcement"> <b class="text-md-start">Annoucements</b></div>
+  </div>
+  <div  class="announce-headding">
+    <marquee behavior="" direction="" style="color:red">MCA 2023 Admission Booking under Management Seats started.
+      More
+      Info Contact - 0474-2723154<a href="#">Click
+        Me</a></marquee>
+  </div>
+</div>
   <!-- <hr> -->
 
   <!-- info -->
   <section id="principal">
     <div class="info-box">
-      <h3 class="text-md-start ">About Us</h3>
+      <h3 class="text-md-start mission-title">About Us</h3>
       <p class="mission-para">Kollam, formerly known also as Quilon, is an ancient centre of culture and maritime
         trade.Graced by the Arabian sea and blessed with the famous backwaters of Ashtamudi lake, Kollam is a great
         tourist centre as well. The city of Kollam gained its lost place of pride in modern times with the establishment
@@ -110,8 +117,9 @@
   <!-- management start  -->
   <section id="mission">
     <div class="row">
+      <h3 class="mission-title">OUR MANAGEMENT</h3>
       <div class="col-lg-6 col-sm-12">
-        <h3 class="mission-title">OUR MANAGEMENT</h3>
+       
         <p class="mission-para">SNIT is managed by Sree Narayana Education Society, a non-profit charitable society based in Calicut. 
           The trust gets its inspiration from the teachings of Sree Narayana Guru, the great social reformer of Kerala. 
           SNES has strived to deliver quality education to students for over three and a half decades.</p>
@@ -408,14 +416,12 @@
   integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-  crossorigin="anonymous"></script>
+
 
 <script src="./js/api.js"></script>
 <script src="./js/navbar.js"></script>
 <script src="./js/responsiveNav.js"></script>
-
+<script src="./js/carousal.js"></script>
 </body>
 
 </html>

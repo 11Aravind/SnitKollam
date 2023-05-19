@@ -25,12 +25,14 @@ const getCategory=()=>{
     API_JSON('Admindb/getCategory.php',true,(response)=>{
         // console.log(response[0])
         $("#categoryOptionSelection").empty();
+        $("#rescategoryOptionSelection").empty();
        $("#categoryOptionSelection").append("<a href='Gallery.html?id=-1' class='dropdown-item selectGallery' id='-1' selected>ALL</a>");
         response.forEach((element,index) => {
+
             $("#categoryOptionSelection").append("<a href='Gallery.html?id="+element.event_id+" 'class='dropdown-item selectGallery' id="+element.event_id+"  >"+element.eventName+"</a>");
+            $("#rescategoryOptionSelection").append("<li><a href='Gallery.html?id="+element.event_id+" 'class='' id="+element.event_id+"  >"+element.eventName+"</a></li>");
             // console.log(element.eventName);
-          
-          
+            // $("#rescategoryOptionSelection").append("<li> <a  href='Gallery.html?id="+element.event_id+" id="+element.event_id+">"+element.eventName+"</a></li>")
         });
          });
 }
