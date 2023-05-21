@@ -178,11 +178,18 @@ img {max-width: 100%;}
 
 
 /* faculty.html */
+ul{
+  list-style: none;
 
+}
+ul>li>a{
+  text-decoration: none;
+  color: black;
+}
 /* footer */
 .footer{
-  background-color: #cf2e2e;
-  padding: 3%;
+  /* background-color: #cf2e2e; */
+  /* padding: 3%; */
   /* color: white; */
 }
 /* .nav-item{

@@ -15,26 +15,19 @@ for (let i = 0; i < slider.length; i++) {
     slider[i].innerHTML += '<div class="ArrowRight" onclick="SliderRight(this)"><p>❯</p></div>';
   }
   // Añadir selectores
-//     if (slider[i].getAttribute("selec") == "true"){
-//     let selectores = "";
-//     for (let x = 0; x < NumContent; x++) {
-//       selectores += '<div onclick="SliderPosition(this, '+x+')" class></div>';
-//     }
-//     slider[i].innerHTML += '<div class="Selectores">'+selectores+'</div>';
-//     slider[i].querySelector("div.Selectores > div:nth-child(1)").className = "Activo";
-//   }
+   
   // Añadir repuccion automatica
-//   let autoplayTime = parseInt(slider[i].getAttribute('autoplay'));
-//   if (autoplayTime > 0){
+  let autoplayTime = parseInt(slider[i].getAttribute('autoplay'));
+  if (autoplayTime > 0){
     // Crear intervalo inicial
-    // ListInter[i] = setInterval(function() {Next(i)}, autoplayTime*1000);
+    ListInter[i] = setInterval(function() {Next(i)}, autoplayTime*1000);
     // Evento sacar raton en el slider
-    // slider[i].onmouseleave = function() {
-    //   ListInter[i] = setInterval(function() {Next(i)}, autoplayTime*1000);
-    // }
+    slider[i].onmouseleave = function() {
+      ListInter[i] = setInterval(function() {Next(i)}, autoplayTime*1000);
+    }
     // Evento meter raton en el slider
-//     slider[i].onmouseenter = function() {clearInterval(ListInter[i]);};
-//   }
+    slider[i].onmouseenter = function() {clearInterval(ListInter[i]);};
+  }
 }
 
 
@@ -132,46 +125,6 @@ function SliderRight(Elements){
 
 
 // Selector
-function SliderPosition(Element, NewNum){
-  // Guardar variables
-  let Num=Element.parentNode.parentNode.querySelector("div.contents").getAttribute("active");
-
-  // Cambiar activo
-  Element.parentNode.parentNode.querySelector("div.contents").setAttribute('active', NewNum);
-
-  // Quitar clase  y añadir nueva
-  Element.parentNode.parentNode.getElementsByClassName("Activo")[0].className = "";
-  Element.className = "Activo";
-
-  // Guardar variable de ruta
-  Element = Element.parentNode.parentNode.getElementsByTagName("content");
-
-  if(Num>NewNum){
-    // Sacar actual
-    Element[Num].animate([
-      {transform: ' translate(0%, 0)'}, {transform: 'translate(100%, 0)'}
-    ], {duration: 250});
-    Element[Num].style.transform="translateX(100%)";
-    // Meter anterior
-    Element[NewNum].animate([
-      {transform: 'translate(-100%, 0)'}, {transform: 'translate(0%, 0)'}
-    ], {duration: 250});
-    Element[NewNum].style.transform="translateX(0%)";
-  }
-  else if (Num<NewNum){
-    // Sacar actual
-    Element[Num].animate([
-      {transform: ' translate(0%, 0)'}, {transform: 'translate(-100%, 0)'}
-    ], {duration: 250});
-    Element[Num].style.transform="translateX(-100%)";
-    // Meter siguiente
-    Element[NewNum].animate([
-      {transform: 'translate(100%, 0)'}, {transform: 'translate(0%, 0)'}
-    ], {duration: 250});
-    Element[NewNum].style.transform="translateX(0%)";
-  }
-}
-
 
 // Autoplay
 function Next(Position){
