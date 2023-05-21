@@ -8,7 +8,7 @@
 
     <title>SNIT     Admin</title>
     <link rel="icon" type="image/x-icon" href="../User/images/snit.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" />
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" /> -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style4.css">
 
@@ -78,6 +78,7 @@
     <script type="text/javascript">
         // $('#sidebar').addClass('active');
         $(document).ready(function () {
+            sessionCheck();
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
             });
@@ -85,7 +86,7 @@
     </script>
     <script src="./js/common/generalFunctionsAndDefenitions.js"></script>
     <script src="./js/common/layout.js"></script>
-    <script src="./js/common/api.js"></script>
+    <script src="./js/api.js"></script>
 </body>
 
 </html>

@@ -1,16 +1,8 @@
-// function API(url, data, successCallBack) {
-//     $.ajax({
-//         type: "POST",
-//         url: apiBaseUrl + url,
-//         data: data,
-//         processData: false,
-//         contentType: false,
-//         // dataType: "multipart/form-data",
-//         success: function (response) {
-//             successCallBack(JSON.parse(response))
-//         },
-//     });
-// }
+// var session;
+// $.ajaxSetup({cache: false})
+// $.get('getsession.php', function (data) {
+//     session = data;
+// });
 var apiBaseUrl = "http://localhost/SnitKollam/Database/";
  const API=(url, data, successCallback)=> {
     $.ajax({
@@ -71,6 +63,19 @@ const getCategory=()=>{
             $("#eventCategory").append("<tr><th scope='row'>{0}</th><td>{1}</td><td><button class='btn btn-primary'>edit</button></td></tr>".format(element.event_id,element.eventName))
         });
          });
+}
+const sessionCheck=()=>{
+    // getsession
+    APIJSON('Admindb/getsession.php',true,(response)=>{
+        if(!response){
+
+            window.location.replace("http://localhost/SnitKollam/Admin/Login.html");
+        }
+        
+    });
+}
+const logout=()=>{
+
 }
 $(document).ready(function () {
     // getEventGallery();

@@ -1,5 +1,5 @@
 var menu = [
-    { "menuName": "Home", "id":"home", "class": "fa fa-home", "link":"adminHome.html"},
+    { "menuName": "Home", "id":"home", "class": "fa fa-home", "link":"index.html"},
     { "menuName": "Event", "id":"events", "class": "fa fa-calendar", "link":"Event.html"},
     { "menuName": "Property", "id":"product", "class": "fa fa-product-hunt", "link":"productPanel.html"},
     { "menuName": "Career", "id":"career", "class": "fa fa-graduation-cap", "link":"careerPanel.html"},
@@ -17,8 +17,8 @@ var sideBar = "<div class='sidebar-header'></div><ul class='list-unstyled compon
 $("#sidebar").append(sideBar);
 
 
-var topMenu = "<ul class='nav navbar-nav ml-auto'  id='headlineTop'><div class='btn-group dropleft'><a class='dropdown-toggle' href='#' role='button' data-toggle='dropdown' aria-expanded='false'> <i class='fa fa-user' aria-hidden='true'></i></a><div class='dropdown-menu'><a class='dropdown-item' href='#'>\
-Action</a><a class='dropdown-item' href='#'>Another action</a><a class='dropdown-item' href='#'>Something else here</a></div></div></ul>!";
+var topMenu = "<ul class='nav navbar-nav ml-auto'  id='headlineTop'><div class='btn-group dropleft'><a class='dropdown-toggle' href='#' role='button' data-toggle='dropdown' aria-expanded='false'> <i class='fa fa-user' aria-hidden='true'></i></a><div class='dropdown-menu'>\
+<a class='dropdown-item' href='./logout.php'>Logout</a></div></div></ul>";
 $("#navbarSupportedContent").append(topMenu);
 
 
