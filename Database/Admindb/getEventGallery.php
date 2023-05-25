@@ -1,7 +1,7 @@
 <?php
 require('../connect.php');
 // $query="SELECT * from eventgallery";
-$query="SELECT eventcategory.eventName, eventgallery.eventPic FROM eventgallery,eventcategory where eventcategory.event_id=eventgallery.event_id";
+$query="SELECT eventgallery.gallery_id,eventcategory.eventName, eventgallery.eventPic FROM eventgallery,eventcategory where eventcategory.event_id=eventgallery.event_id";
 // print_r($query);
 $result=array();
 $run=mysqli_query($connect,$query);

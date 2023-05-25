@@ -104,10 +104,23 @@ const getEventGallery=()=>{
         // eventTable
         $("#eventList").empty();
 response.forEach((element)=>{
-$("#eventList").append("<tr scope='row'><td>{0}</td><td ><img class='td-img' src='../Database/{1}'/></td><td><button class='btn btn-danger'>DELETE</button></td></tr>".format(element.eventName,element.eventPic));
+$("#eventList").append("<tr scope='row'><td>{0}</td><td ><img class='td-img' src='../Database/{1}'/></td><td><button id='{2}' class='btn btn-danger galleryDeleteBtn'>DELETE</button></td></tr>".format(element.eventName,element.eventPic,element.gallery_id));
 })
 $('#eventTable').DataTable();
+$(".galleryDeleteBtn").click(function(e){
+    e.preventDefault();
+var id=e.target.id;
+// console.log(id);
+API('Admindb/deletegallery.php',{'id':id}, (result) => {
+
+    alert(result);
+    getEventGallery();
+
+})
+});
     })
+
 }
+
 
 
