@@ -5,14 +5,14 @@ var responsivwNav='<div class="btn" style="border:none">\
 <div class="text">\
 </div>\
 <ul style="margin-top: 46px;">\
-  <li class="active"><a href="#">Home</a></li>\
+  <li class="active"><a href="index.html">Home</a></li>\
   <li>\
     <a href="#" class="feat-btn">Institution \
       <span class="fa fa-chevron-down first" aria-hidden="true" ></span>\
     </a>\
     <ul class="feat-show">\
-      <li><a href="#">About Snit</a></li>\
-      <li><a href="#">Faculty</a></li>\
+      <li><a href="#aboutSnit">About Snit</a></li>\
+      <li><a href="#faculty">Faculty</a></li>\
       <li><a href="#">Vission & Mission</a></li>\
       <li><a  href="./images/pdf/mandatory_disclosure_ANNEXURE_2022.pdf">Mandatory disclosure</a></li>\
     </ul>\
@@ -53,7 +53,7 @@ var responsivwNav='<div class="btn" style="border:none">\
     </a>\
     <ul class="serv-show3">\
       <li><a href="#">Student Union</a></li>\
-      <li> <a  href="#">Club</a></li>\
+      <li> <a  href="#club">Club</a></li>\
       <li> <a  href="#">College Magazine</a></li>\
       <li> <a  href="#">Placement</a></li>\
     </ul>\

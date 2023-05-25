@@ -16,6 +16,6 @@ $("#showCategory").click(()=>{
         $("#showCategory").text("Show List");   
     }
 });
-$(document).ready( function () {
-    $('#eventTable').DataTable();
-} );
+// $(document).ready( function () {
+//     $('#eventTable').DataTable();
+// } );

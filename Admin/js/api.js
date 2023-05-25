@@ -102,10 +102,11 @@ const getEventGallery=()=>{
     APIJSON('Admindb/getEventGallery.php',true,(response)=>{
         // console.log(response);
         // eventTable
-        $("#eventTable").empty();
+        $("#eventList").empty();
 response.forEach((element)=>{
-$("#eventTable").append("<tr scope='row'><td>{0}</td><td ><img class='td-img' src='../Database/{1}'/></td><td><button class='btn btn-danger'>DELETE</button></td></tr>".format(element.eventName,element.eventPic));
+$("#eventList").append("<tr scope='row'><td>{0}</td><td ><img class='td-img' src='../Database/{1}'/></td><td><button class='btn btn-danger'>DELETE</button></td></tr>".format(element.eventName,element.eventPic));
 })
+$('#eventTable').DataTable();
     })
 }
 

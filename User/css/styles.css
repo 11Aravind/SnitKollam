@@ -102,7 +102,8 @@ img {max-width: 100%;}
 .mission-title{
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 41px;
+  /* font-size: 41px; */
+  font-size: 30px;
 }
 .mission-para,p{
   line-height: 1.75;
@@ -176,8 +177,26 @@ img {max-width: 100%;}
     padding: 5%;
     /* background-color: #82AAE3; */
 
-
+.college-pic{
+  width:100%
+}
 /* faculty.html */
+.bottom-to-top{
+  /* width: 47px;
+  height: 30px;
+  position: fixed;
+  top: 599px;
+  right: 36px;
+  z-index: 100; */
+  width: 47px;
+    height: 30px;
+    position: fixed;
+    /* top: 599px; */
+    right: 36px;
+    bottom: 35px;
+    z-index: 100;
+}
+
 ul{
   list-style: none;
 
@@ -188,9 +207,12 @@ ul>li>a{
 }
 /* footer */
 .footer{
-  /* background-color: #cf2e2e; */
+  background-color: #dd3a3a;
   /* padding: 3%; */
-  /* color: white; */
+  color: white;
+  /* margin-left: -17px;
+  margin-right: -17px; */
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
 /* .nav-item{
   color: white;
@@ -217,7 +239,9 @@ ul>li>a{
 .faculty-box{
   padding: 2%;
 }
+.missionandVision{
 
+}
 /* register */
 
 /* .form-signin{
@@ -350,10 +374,15 @@ ul>li>a{
       /* border-radius: 30px; */
       width: 95%;
    }
+   .missionandVision{
+    flex-direction: column-reverse;
+   }
     }
     @media only screen and (max-width: 536px)
 {
   #info{
     margin:0;
   }
+  
+  
 }
