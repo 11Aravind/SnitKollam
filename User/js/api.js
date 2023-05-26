@@ -58,6 +58,9 @@ const loadGallery=()=>{
 // $("#galleryDropdown").click(()=>{
 //     window.location.href="Gallery.html";
 // })
+const placedStuddet=()=>{
+    
+}
 $(document).ready(function () {
     // $('#galleryDropdown').on('click', function () {
         getCategory();
