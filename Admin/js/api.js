@@ -59,7 +59,7 @@ const getCategory = () => {
             $("#categoryOption").append("<option value='{0}'>{1}</option>".format(element.event_id, element.eventName));
             // console.log(element.eventName);
 
-            $("#eventCategory").append("<tr><th scope='row'>{0}</th><td>{1}</td><td><button class='btn btn-primary'>edit</button></td></tr>".format(element.event_id, element.eventName))
+            $("#eventCategory").append("<tr><th scope='row'>{0}</th><td>{1}</td></tr>".format(element.event_id, element.eventName))
         });
     });
 }

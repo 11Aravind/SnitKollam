@@ -31,6 +31,8 @@
     /* color: white; */
     font-size: 13px;
     line-height: 18px;
+    position: fixed;
+    z-index: 10000;
   }
   .btn.click span:before{
     content: '\f00d';
