@@ -137,6 +137,7 @@ small{
 display: flex;
 justify-content: flex-end;
 width: 75%;
+
 }
 .main-nav{
     display: flex;
@@ -208,6 +209,8 @@ border-radius: 0px;
 {
     .menu-container{
         font-size: 6px;
+        justify-content: center;
+    align-items: center;
     }
     .announce-margue {
         width: 41%;

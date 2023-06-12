@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="css/card.scss">
   <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="css/faculty.css">
+  <link rel="stylesheet" href="css/responsiveNav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,29 +31,18 @@
   <!-- navbar start-->
   <div class="container">
     <div class="logo">
-      <img src="images/snit2.jpeg" alt="logo" />
-      <!-- <div class="logoMainCOntainer">
-        <div class="logo-name-container">
-          <div class="college-name">SNiT</div>
-          <div class="college-place">Kollam
-
-          </div>
-        </div>
-        <div> <small>Managed by SNES,Kollam</small></div>
-
-        <small>
-          Approved By AICTE,Affiliated to University of Kerala Recognized by Government of Kerala
-        </small>
-
-      </div> -->
-
+     <a href="./index.html"> <img src="images/snit2.jpeg" alt="logo" /></a>
     </div>
-    <div class="menu-container">
+    <div class="menu-container" id="top">
       <div class="submenu">Student Login</div>|
       <div class="submenu"><a href="../Admin/Login.html">Faculty Login</a></div> |
       <div class="submenu">Contact Us</div>
+      
+      <div class="submenu" id="responsiveMenu"></div>
+      <!-- <div class="submenu"><i class="fa fa-bars" aria-hidden="true"></i></div> -->
     </div>
   </div>
+
   <div class="main-nav" id="topnav"></div>
   <!-- navbar end -->
   <div id="info">
@@ -134,6 +126,7 @@ crossorigin="anonymous"></script>
   crossorigin="anonymous"></script>
   <script src="./js/navbar.js"></script>
 <script src="./js/api.js"></script>
+<script src="./js/responsiveNav.js"></script>
 <script >loadGallery()</script>
 </body>
 

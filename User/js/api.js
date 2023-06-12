@@ -63,7 +63,7 @@ const placedStuddet=()=>{
     API_JSON('Userdb/getPlacedStudent.php',true,(response)=>{
         $("#placedStudent").empty();
         response.forEach((element,index)=>{
-            $("#placedStudent").append('<div class="card swiper-slide" style="width: 25%"><img src="../Database/'+element.photo+'" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">'+element.company+'</h5><p class="card-text"> '+element.jobtype+'</p></div> </div>');
+            $("#placedStudent").append('<div class="card swiper-slide" style="width: 25%"><img src="../Database/'+element.photo+'" class="card-img-top" alt="..."><div class="card-body"><h5 class="text-md-start">'+element.company+'</h5><p class="card-text"> '+element.jobtype+'</p></div> </div>');
         })
     })
 }

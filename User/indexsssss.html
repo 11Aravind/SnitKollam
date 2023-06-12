@@ -1,110 +1,44 @@
 <!DOCTYPE html>
-<!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Card Slider</title>
-
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <title>Document</title>
 </head>
-
+<style>
+   .single-card{
+    width: 274px;
+    height: 324px;
+    overflow: hidden  ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* align-items: center; */
+  }
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  .card-image>img{
+    width: 100%;
+    height: 254px;
+  }
+  .desc{
+    display: flex;
+    flex-direction: column;
+  }
+</style>
 <body>
-  <div class="slide-container swiper">
-    <div class="slide-content">
-      <div class="card-wrapper swiper-wrapper">
-        <div class="card swiper-slide" style="width: 311.667px;">
-          <img src="https://cdn.hswstatic.com/gif/play/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Frontend Developer</p>
-          </div>
-        </div>
-        <div class="card swiper-slide" style="width: 311.667px;">
-          <img src="https://cdn.hswstatic.com/gif/play/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Frontend Developer</p>
-
-          </div>
-        </div>
-        <div class="card swiper-slide"  style="width: 311.667px;">
-          <img src="https://cdn.hswstatic.com/gif/play/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Frontend Developer</p>
-
-          </div>
-        </div>
-        <div class="card swiper-slide" style="width: 311.667px;">
-          <img src="https://cdn.hswstatic.com/gif/play/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Frontend Developer</p>
-
-          </div>
-        </div>
-        <div class="card swiper-slide" style="width: 311.667px;">
-          <img src="https://cdn.hswstatic.com/gif/play/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Frontend Developer</p>
-
-          </div>
-        </div>
-        <div class="card swiper-slide" style="width: 311.667px;">
-          <img src="https://cdn.hswstatic.com/gif/play/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Frontend Developer</p>
-
-          </div>
-        </div>
-        <div class="card swiper-slide" style="width: 311.667px;">
-          <img src="https://cdn.hswstatic.com/gif/play/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Frontend Developer</p>
-
-          </div>
-        </div>
-        <div class="card swiper-slide" style="width: 311.667px;">
-          <img src="https://cdn.hswstatic.com/gif/play/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Frontend Developer</p>
-
-          </div>
-        </div>
-      </div>
+  <div class="single-card">
+    <div class="card-image">
+      <img src="../Database/uploadImage/2016236181.jpg" alt="">
     </div>
-
-    <div class="swiper-button-next swiper-navBtn"></div>
-    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="desc">
+      <div class="name">Adithya</div>
+      <div class="job-type">Frontend Developer</div>
+    </div>
   </div>
-
 </body>
-
-<!-- Swiper JS -->
-<script src="js/swiper-bundle.min.js"></script>
-
-<!-- JavaScript -->
-<script src="js/script.js"></script>
-
 </html>

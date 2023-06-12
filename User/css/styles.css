@@ -249,6 +249,9 @@ ul>li>a{
 } */
 
 /* mediaQuery */
+@media (min-width: 768px){
+  
+}
 
 @media (max-width:1028px){
   #info{
