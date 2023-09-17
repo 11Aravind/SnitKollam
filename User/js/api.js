@@ -1,5 +1,5 @@
 
-var apiBaseUrl = "http://localhost/SnitKollam/Database/";
+var apiBaseUrl = "http://localhost/SnitKollam/User/Database/";
  const API=(url, data, successCallback)=> {
     $.ajax({
         url: apiBaseUrl + url,
@@ -46,7 +46,7 @@ const loadGallery=()=>{
                 $("#categoryHeadding").html("<h3 class='text-md-start'>"+response.categoryName.eventName+"</h3>");
                 $("#gallery").empty();
                 response.result.forEach((element,index)=>{
-                    $("#gallery").append("<img src='../Database/"+element.eventPic+"' class='img-responsive'>");
+                    $("#gallery").append("<img src='./Database/"+element.eventPic+"' class='img-responsive'>");
                 })
                 // gallery
             })
@@ -63,7 +63,7 @@ const placedStuddet=()=>{
     API_JSON('Userdb/getPlacedStudent.php',true,(response)=>{
         $("#placedStudent").empty();
         response.forEach((element,index)=>{
-            $("#placedStudent").append('<div class="card swiper-slide" style="width: 25%"><img src="../Database/'+element.photo+'" class="card-img-top" alt="..."><div class="card-body"><h5 class="text-md-start">'+element.company+'</h5><p class="card-text"> '+element.jobtype+'</p></div> </div>');
+            $("#placedStudent").append('<div class="card swiper-slide" style="width: 25%"><img src="./Database/'+element.photo+'" class="card-img-top" alt="..."><div class="card-body"><h5 class="text-md-start">'+element.company+'</h5><p class="card-text"> '+element.jobtype+'</p></div> </div>');
         })
     })
 }

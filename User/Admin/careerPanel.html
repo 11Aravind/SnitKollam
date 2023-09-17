@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>SNIT     Admin</title>
-    <link rel="icon" type="image/x-icon" href="../User/images/snit.ico">
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" /> -->
+    <title>Admin</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg" />
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style4.css">
 
@@ -42,8 +41,14 @@
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fa fa-bars"></i>
+                
                         <!-- <span>Toggle Sidebar</span> -->
                     </button>
+                    <div class="humanReadMsg" style="
+                    width: 100%;
+                    text-align: center;
+                    color: red;
+                "></div>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -57,8 +62,56 @@
             </nav>
 
             <div class="rightContent">
+                <div class="card" style="padding: 2%;">
+                    <h4>Add Placed Students</h4>
+                    <div id="callbackMsg"></div>
+                    <form name="" id="placedStudent" accept-charset="multipart/form-data">
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="position">Photo</label>
+                                <input type="file" class="form-control" name="eventImage" id="eventImage">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="position">Job Type</label>
+                                <input type="text" class="form-control" name="jobtype" id="jobtype">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="qualification">Name</label>
+                                <input type="text" class="form-control" name="company" id="company">
+                                <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> -->
+
+                            </div>
+
+                            <!-- <div class="form-group col-md-3">
+                                <label for="inputEmail4">Image</label>
+
+                                <input type="file" name="image" class="form-control-file" id="image">
+                            </div> -->
+                            <!-- <div class="form-group col-md-1"> -->
+
+                            <button type="button" id="savePlacedStudent" class="btn btn-primary mb-2">Save</button>
+                            <!-- </div> -->
+                    </form>
+                </div>
             </div>
+            <div class="card" style="padding: 2%; margin-top: 2%;">
+                <h4>Career List</h4>
+                <table id="careerTable" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Job Type</th>
+                            <th>Qualification</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="careerTableBody">
+
+                    </tbody>
+            </div>
+
         </div>
+    </div>
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -75,18 +128,19 @@
 
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
 
+    
+    <script src="./js/common/generalFunctionsAndDefenitions.js"></script>
+    <script src="./js/common/layout.js"></script>
+<script src="./js/api.js"></script>
     <script type="text/javascript">
         // $('#sidebar').addClass('active');
         $(document).ready(function () {
-            sessionCheck();
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
             });
         });
+        // getCareer();
     </script>
-    <script src="./js/common/generalFunctionsAndDefenitions.js"></script>
-    <script src="./js/common/layout.js"></script>
-    <script src="./js/api.js"></script>
 </body>
 
 </html>

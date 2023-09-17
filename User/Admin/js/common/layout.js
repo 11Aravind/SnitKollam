@@ -1,9 +1,9 @@
 var menu = [
     { "menuName": "Home", "id":"home", "class": "fa fa-home", "link":"index.html"},
     { "menuName": "Event", "id":"events", "class": "fa fa-calendar", "link":"Event.html"},
-    { "menuName": "Property", "id":"product", "class": "fa fa-product-hunt", "link":"productPanel.html"},
-    { "menuName": "Career", "id":"career", "class": "fa fa-graduation-cap", "link":"careerPanel.html"},
-    { "menuName": "Gallery", "id":"gallery", "class": "fa fa-image", "link":"galleryPanel.html"}
+    // { "menuName": "Property", "id":"product", "class": "fa fa-product-hunt", "link":"productPanel.html"},
+    { "menuName": "Placed Student", "id":"career", "class": "fa fa-graduation-cap", "link":"careerPanel.html"},
+    // { "menuName": "Gallery", "id":"gallery", "class": "fa fa-image", "link":"galleryPanel.html"}
     // { "menuName": "Services", "class":"fa fa-wrench", "link":"serviceDashboard.html"},
 ]
 

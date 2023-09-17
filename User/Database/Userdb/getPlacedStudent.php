@@ -1,6 +1,7 @@
 <?php
 include '../connect.php';
 $query="select * from placedstudents";
+// print_r($query);
 $run=mysqli_query($connect,$query);
 $result=[];
 if(mysqli_num_rows($run)>0)
@@ -9,6 +10,7 @@ if(mysqli_num_rows($run)>0)
     {
         $result[]=$fetch;
     }
-    echo json_encode($result);
+   
 }
+echo json_encode($result);
 ?>

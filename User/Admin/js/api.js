@@ -3,7 +3,7 @@
 // $.get('getsession.php', function (data) {
 //     session = data;
 // });
-var apiBaseUrl = "http://localhost/SnitKollam/Database/";
+var apiBaseUrl = "http://localhost/SnitKollam/User/Database/";
 const API = (url, data, successCallback) => {
     $.ajax({
         url: apiBaseUrl + url,
@@ -32,7 +32,7 @@ $("#checkAuthentication").click(function (e) {
     e.preventDefault();
     API('Admindb/login.php', $("#admin-authentication").serialize(), (result) => {
         if (result == "success")
-            window.location = "./index.html"
+            window.location = "./index.html";
         // else
         //     console.log(result)
     })
@@ -68,7 +68,7 @@ const sessionCheck = () => {
     APIJSON('Admindb/getsession.php', true, (response) => {
         if (!response) {
 
-            window.location.replace("http://localhost/SnitKollam/Admin/Login.html");
+            window.location.replace("http://localhost/SnitKollam/User/Admin/Login.html");
         }
 
     });
